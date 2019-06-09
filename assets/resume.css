@@ -26,7 +26,6 @@ a:hover {
 	background: #355C7D;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 color: white;
 }
 
@@ -37,4 +36,13 @@ color: white;
 
 p {
 	padding:1.6%;
+}
+
+#portfolio {
+	color: white;
+	text-align: center;
+padding-bottom: 300px;
+	background-image: url(https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+background-attachment: fixed;
+background-position: center;
 }
