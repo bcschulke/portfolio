@@ -1,5 +1,7 @@
-body {
+html, body {
 	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	width: 100%;
 }
 
 nav {
@@ -14,13 +16,16 @@ h2 {
 img {
 	max-height:500px;
 }
-a:hover {
+/*a:hover {
 	color: #CD0000 !important;
 	transition: .5s;
-}
-.jumbotron {
+}*/
+#page-top {
 	font-size: 1.2rem;
 	width: 100%;
+	height: 100%;
+	position: relative;
+	background-size: cover;
 	text-align: center;
 	padding: 10%;
 	background: #355C7D;  /* fallback for old browsers */
@@ -36,6 +41,13 @@ color: white;
 
 p {
 	padding:1.6%;
+}
+
+.stuck {
+  position:fixed;
+  top:0;
+  width: 100%;
+  z-index: 1;
 }
 
 #portfolio {
