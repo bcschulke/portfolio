@@ -57,6 +57,19 @@ color: white;
 	margin-bottom: 20px;
 }
 
+.project-img {
+	margin: auto;
+}
+
+.skills-tag {
+	background-image: -webkit-linear-gradient(to right, gray, #aaa);
+	background-image: linear-gradient(to right, gray, #aaa);
+	color: white;
+	border-radius: 5px;
+	padding:3px;
+	margin-bottom: 5px;
+	font-size: .8rem;
+}
 /*#portfolio {
 	background-color: black;
 }*/
