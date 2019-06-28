@@ -62,8 +62,7 @@ color: white;
 }
 
 .skills-tag {
-	background-image: -webkit-linear-gradient(to right, gray, #aaa);
-	background-image: linear-gradient(to right, gray, #aaa);
+	background-color: #333333;
 	color: white;
 	border-radius: 5px;
 	padding:3px;
