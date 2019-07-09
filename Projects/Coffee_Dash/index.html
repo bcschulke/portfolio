@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kick Coffee Co. Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Charts.js CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+        
+        <!-- Bootstrap 4 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/acd8a189f4.js"></script>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="Assets/style.css">
+       
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-light bg-light fixed-top text-dark">
+            <a class="navbar-brand" href="#"><i class="fas fa-coffee"></i> Kick Coffee Co.</a>
+            <div class="text-dark">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                            <a class="nav-link active" href="#" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="fas fa-user-circle"></i> <span class="d-none d-md-inline">Benjamin</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Messages"><i class="fas fa-envelope"></i></a>           
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Notifications"><i class="fas fa-bell"></i></a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="fas fa-sign-out-alt"></i></a>
+                    </li>
+                </ul>
+            </div>    
+        </nav>
+
+        <!--  Output section-->
+        <div class="container">
+            <!-- Sorting Bar -->
+            <div class="row">
+                <div class="col mb-3 d-none d-md-block">
+                    <h2 class="">Dashboard</h2>
+                </div>
+                <div class="col mb-3">
+                    <div class="btn-toolbar justify-content-center justify-content-md-end" role="toolbar">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-secondary"><i class="fas fa-chevron-circle-left"></i></button>
+                            <button type="button" class="btn btn-secondary">07/01/2019-07/30/2019</button>
+                            <button type="button" class="btn btn-secondary"><i class="fas fa-chevron-circle-right"></i></button>
+                            <div class="btn-group ml-2" role="group">
+                                    <button id="btnGroupDrop" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Timeframe
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <a class="dropdown-item" href="#">Week</a>
+                                        <a class="dropdown-item active" href="#">Month</a>
+                                        <a class="dropdown-item" href="#">Year</a>
+                                    </div>
+                                </div>
+                        </div> 
+                    </div>
+                </div>  
+            </div>
+
+            <!-- Indicators -->
+            <div class="row justify-content-between text-light text-center text-lg-left" id="indicatorRow">
+                <div class="col-sm-6 col-lg-3 mb-4">
+                    <div id="profitCard" class="card h-100">
+                        <div class="card-body">
+                            <h4 class="mb-4">Profit</h4>
+                            <h2 class="mb-4">$<span id="profit"></span></h2>
+                            <h5 class="mb-4">Increase of 10%</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-4">
+                    <div id="revenueCard" class="card h-100">
+                        <div class="card-body">
+                            <h4 class="mb-4">Revenue</h4>
+                            <h2 class="mb-4">$<span id="revenue">27000</span></h2>
+                            <h5 class="mb-4">Increase of 4%</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-4">
+                    <div id="expensesCard" class="card h-100">
+                        <div class="card-body">
+                            <h4 class="mb-4">Expenses</h4>
+                            <h2 class="mb-4">$<span id="expenses">25000</span></h2>
+                            <h5 class="mb-4">Decrease of 7%</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-4">
+                    <div id="salesCard" class="card h-100">
+                        <div class="card-body text-dark">
+                            <h4 class="text-truncate">Expense Breakdown</h4>
+                            <div class="chart-container">
+                                <canvas id="expenseChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center text-lg-left">
+                <div class="col-md-6 col-lg-7 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="text-truncate">Average Traffic Statistics</h4>
+                            <canvas id="trafficChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 mb-4">
+                    <div id="salesCard" class="card h-100">
+                        <div class="card-body">
+                            <h4>Sales</h4>
+                            <canvas id="salesChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div>
+    <footer>
+        <p class="text-center">Copyright © 2019 Kick Coffee Co. All rights reserved.</p>
+    </footer>
+    <!-- Popper JS Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Internal JS Scripts -->
+    <script src="Assets/js/app.js"></script>
+    </body>
+</html>

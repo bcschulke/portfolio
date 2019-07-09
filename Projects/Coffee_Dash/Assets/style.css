@@ -1,0 +1,47 @@
+/* Elements */
+body { 
+padding-top: 70px;
+background: #ECE9E6;
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+}
+
+.nav a {
+    color: rgba(0,0,0,.9);
+}
+
+.nav a:hover {
+    color:rgba(0,0,0,.5);
+}
+/* Cards */
+.card {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .2);
+}
+#expensesCard {
+    background: #fd746c;
+background: -webkit-linear-gradient(to right, #ff9068, #fd746c);
+background: linear-gradient(to right, #ff9068, #fd746c);
+}
+
+#revenueCard{
+    background: #06beb6;
+    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);
+    background: linear-gradient(to right, #48b1bf, #06beb6);
+}
+
+#profitCard {
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+    
+}
+
+#indicatorRow .card {
+    min-height: 220px;
+}
+
+/* DOM Manipulation Classes*/
+.negative {
+    border: 5px solid red;
+}
+
