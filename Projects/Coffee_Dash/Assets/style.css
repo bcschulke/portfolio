@@ -1,4 +1,8 @@
 /* Elements */
+html {
+    width:100%;
+}
+
 body { 
 padding-top: 70px;
 background: #ECE9E6;
