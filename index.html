@@ -1,183 +1,286 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Benjamin Schulke</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Benjamin Schulke</title>
 
-<!-- CDNS -->
+<!-- Materialize -->
+<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
- -->
-
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&display=swap" rel="stylesheet">
-
-<!-- INTERNAL LINKS -->
-<link rel="stylesheet" type="text/css" href="assets/resume.css">
-	
-<!-- META -->
-	<meta name="viewport" content="width=device-width">
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/acd8a189f4.js"></script>
+<!-- Internal CSS -->
+<link type="text/css" rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>	
-	
-	<!-- header -->
-<section class="container-fluid align-items-around m-0" id="page-top">
-	<div class="my-5">
-		<h1>Hello, my name is <span id="name">Ben Schulke</span>.</h1>
+<body>
+    <!-- INDEX BANNER -->
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot" id="attempt1">
+            <div class="container center">
+                <br><br>
+                <h1 class="header black-text text-lighten-2">Hello. I'm Benjamin Schulke.</h1>
+                <div class="row">
+                    <h5 class="header black-text col s12 light">I'm a Junior Web Developer.</h5>
+                </div>
+                <div class="row">
+                    <a href="#about" class="btn-large waves-effect waves-light indigo lighten-2">Find Out More</a>
+                </div>
+                <br><br>
+            </div>
+        </div>
+        <div class="parallax"><img src="imgs/coffeee2.png" alt="Unsplashed background img 1"></div>
+    </div>
 
-	<h2>I'm a front-end web developer.</h2>
-	
+    <!-- NAVBAR -->
+    <nav class="navbar black">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Benjamin Schulke</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+        
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
-	<a href="#about" class="btn btn-lg btn-outline-info">Find out more <span id="arrow"><i class="fas fa-arrow-down"></i></span>
-	</a>
-	</div>
-		
-</section>
-<!-- Navbar-->
-	<div class="container-fluid py-0 px-0">
-		<nav id="mainNavbar" class="navbar navbar-expand-md navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">BENJAMIN SCHULKE</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse " id="navLinks">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+    <!-- About Section -->
+    <div class="container">
+        <div class="section scrollspy" id="about">
+            <h3 class="center">About Me</h3>
+            <!-- Portrait -->
+            <div class="row">
+                <br><br>
+                <div class="col s6 offset-s3 m4 offset-m4" id="portrait">
+                    <img class="circle responsive-img" src="imgs/selfportrait.png" alt="Self Portrait of Ben">
+                </div>
+            </div>
 
-<!-- About Section -->
-<section id="about">
-	<div class="container-fluid bg-light text-dark text-center py-4" name="about">
-		<h2>About Me</h2>
-		<div class="row">
-			
-			<div class="col-md-6">
-				<p>Everyone has a story to tell, and helping others to tell it with <strong>beauty</strong> and <strong>purpose</strong> is my passion.  I love working with people and technology, and find web development to be the perfect blend of the two.
-				</p>
-				<p>I am a self-starter, go-getter, compulsive researcher who loves to solve problems and keep learning. It's no wonder why I've found coding to be more fun than work! In my spare time, I love to find new coffee shops with my wife Lauren, go on walks with my dog Hopper, or play games with friends. If you do decide to play with me, watch out – I can be pretty competitive!
-				</p>
-			</div>
-			<div class="col-md-6">
-				<img class="img-thumbnail" src="imgs/selfportrait.png">
-			</div>
-		</div>	
-	</div>
-</section>
-<!-- Portfolio Section -->
-<section class="container-fluid" id="portfolio" name="portfolio">
-	<h2>Portfolio</h2>
-	<!-- RGB GAME -->
-	<div class="project">
-		<div class="row">
-			<div class="col-sm-12 col-md-3">
-				<img class="img-thumbnail d-block mx-auto" src="imgs/colorGame.png">
-			</div>
-			<div class="project-body col-sm-12 col-md-9">
-				<h3>RGB Color Game</h3>
-				<p>Simple game designed using pure vanilla javascript.</p>
-				<div>
-					<span class="skills-tag"><i class="fas fa-code"></i> HTML</span>
-					<span class="skills-tag"><i class="fas fa-palette"></i> CSS</span>
-					<span class="skills-tag"><i class="fas fa-coffee"></i> Javascript</span>
-				</div>
-				<br>
-				<a class="btn btn-primary" href="Projects/colorGame/colorGame.html" target="_BLANK">Visit</a>
-			</div>
-		</div>
-	</div>
-	<!-- YelpCamp -->
-	<div class="project">
-		<div class="row">
-			<div class="col-sm-12 col-md-3">
-				<img class="img-thumbnail d-block mx-auto" src="imgs/yelpcamp.png">
-			</div>
-			<div class="col-sm-12 col-md-9">
-				<h3>YelpCamp</h3>
-				<p>This WDBC project is a full-stack(MEN) website made to showcase potential camping sites.</p>
-				<div>
-					<span class="skills-tag"><i class="fas fa-code"></i> HTML</span>
-					<span class="skills-tag"><i class="fas fa-palette"></i> CSS</span>
-					<span class="skills-tag"><i class="fas fa-coffee"></i> Javascript</span>
-					<span class="skills-tag"><i class="fas fa-code-branch"></i> Node.js</span>
-					<span class="skills-tag"><i class="fas fa-code-branch"></i> Express.js</span>
-					<span class="skills-tag"><i class="fas fa-sitemap"></i> MongoDB</span>
-					<span class="skills-tag"><i class="fas fa-palette"></i> Bootstrap</span>
-				</div>
-				<br>
-				<a class="btn btn-primary" href="https://mysterious-shelf-60410.herokuapp.com/" target="_BLANK">Visit</a>
-			</div>
-		</div>
-	</div>
-	<!-- Natural Clean -->
-	<div class="project">
-		<div class="row">
-			<div class="col-sm-12 col-md-3">
-				<img class="img-thumbnail d-block mx-auto" src="imgs/naturalClean.png">
-			</div>
-			<div class="col-sm-12 col-md-9">
-				<h3>Natural Clean</h3>
-				<p>Natural Clean is a real world static website mockup being developed for a relative's cleaning business. The hope is to deploy it live within the next month or so.</p>
-				<div>
-					<span class="skills-tag"><i class="fas fa-code"></i> HTML</span>
-					<span class="skills-tag"><i class="fas fa-palette"></i> CSS</span>
-					<!-- <span class="skills-tag"><i class="fas fa-coffee"></i> Javascript</span> -->
-					<!-- <span class="skills-tag"><i class="fas fa-code-branch"></i> jQuery</span> -->
-					<span class="skills-tag"><i class="fas fa-palette"></i> Materialize</span>
-				</div>
-				<br>
-				<a class="btn btn-primary" href="https://bcschulke.github.io/naturalclean/" target="_BLANK">Visit</a>
-			</div>
-		</div>
-	</div>
-	<div class="project">
-		<div class="row">
-			<div class="col-sm-12 col-md-3">
-				<img class="img-thumbnail d-block mx-auto" src="imgs/kickCoffee2.png">
-			</div>
-			<div class="col-sm-12 col-md-9">
-				<h3>Kick Coffee Co. Dashboard</h3>
-				<p>A simple responsive dashboard app for a startup coffee business.</p>
-				<div>
-					<span class="skills-tag"><i class="fas fa-code"></i> HTML</span>
-					<span class="skills-tag"><i class="fas fa-palette"></i> CSS</span>
-					<span class="skills-tag"><i class="fas fa-coffee"></i> Javascript</span>
-					<span class="skills-tag"><i class="fas fa-chart-pie"></i> Chart.js</span>
-					<!-- <span class="skills-tag"><i class="fas fa-code-branch"></i> jQuery</span> -->
-					<span class="skills-tag"><i class="fas fa-palette"></i> Bootstrap</span>
-				</div>
-				<br>
-				<a class="btn btn-primary" href="Projects/Coffee_Dash/index.html" target="_BLANK">Visit</a>
-			</div>
-		</div>
-	</div>
-</section>
+            <!-- Descriptions -->
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card small hoverable">
+                        <div class="card-title">
+                            <h2 class="center indigo-text lighten-2"><i class="material-icons">face</i></h2>
+                            <h5 class="center indigo-text lighten-2">Who I Am</h5>
+                        </div>
+                        <div class="card-content">
+                            <p class="light">I'm a pastor-turned-developer, husband, dog-father, and compulsive researcher. I enjoy meeting with people for coffee and playing (most) any kind of game.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col s12 m6 l4">
+                    <div class="card small hoverable">
+                        <div class="card-title">
+                            <h2 class="center indigo-text lighten-2"><i class="material-icons">palette</i></h2>
+                            <h5 class="center indigo-text lighten-2">Design Philosophy</h5>
+                        </div>
+                        <div class="card-content">
+                         <p class="light">I am a firm believer in keeping things simple, beautiful, and purposeful. No one enjoys using an app or website if their eyes have no room to breathe.</p>
 
+                        </div>
+        
+                     </div>
+                </div>
+        
+                <div class="col s12 m6 offset-m3 l4">
+                    <div class="card small hoverable">
+                        <div class="card-title">
+                                <h2 class="center indigo-text lighten-2"><i class="material-icons">stars</i></h2>
+                                <h5 class="center indigo-text lighten-2">Interests</h5>
+                        </div>
+                        <div class="card-content">
+                            <p class="light">Aside from coding, I enjoy many other things. Noteworthy topics include: travelling, books, movies, ancient history, nerd culture, and food. Oh, did I mention coffee? </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Portfolio -->
+        
+    </div>
+    <div class="section scrollspy" id="portfolio">
+        <div class="container">
+            <h3 class="center">Portfolio</h3>
+            <!-- Projects -->
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card project">
+                        <div class="card-image">
+                            <img src="imgs/kickCoffee.png" alt="">
+                        </div>
+                        <div class="overlay">
+                            <div class="pTitle truncate">Kick Coffee Co.</div>
+                            <div class="tags">HTML+CSS+JS+Bootstrap</div>
+                            <a class="waves-effect indigo lighten-2 btn modal-trigger visit" href="#modal1">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card project">
+                        <div class="card-image">
+                            <img src="imgs/naturalClean.png" alt="">
+                        </div>
+                        <div class="overlay">
+                            <div class="pTitle truncate">Natural Clean</div>
+                            <div class="tags">HTML+CSS+Materialize</div>
+                            <a class="waves-effect indigo lighten-2 btn modal-trigger visit" href="#modal2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card project">
+                        <div class="card-image">
+                            <img src="imgs/yelpcamp.png" alt="">
+                        </div>
+                        <div class="overlay">
+                            <div class="pTitle truncate">Yelp Camp</div>
+                            <div class="tags truncate">
+                                Node+Express+Mongo+Bootstrap</div>
+                            <a class="waves-effect indigo lighten-2 btn modal-trigger visit" href="#modal3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card project">
+                        <div class="card-image">
+                            <img src="imgs/colorGame.png" alt="">
+                        </div>
+                        <div class="overlay">
+                            <div class="pTitle truncate">RGB Game</div>
+                            <div class="tags truncate">
+                                HTML+CSS+JS</div>
+                            <a class="waves-effect indigo lighten-2 btn modal-trigger visit" href="#modal4">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <footer>
+        <div class="section scrollspy" id="contact">
+            <div class="container">
+                <div class="center">
+                    <h3>Contact</h3>
+                    <br><br>
+                    <h6>Benjamin Schulke</h6>
+                    <p>benjamin.schulke@gmail.com</p>
+                    <p>Grand Rapids, MI</p>
+                    <br><br>
+                </div>    
 
-<script
-src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"></script>
-<!-- bootstrap JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!-- Waypoints JS -->
-<script type="text/javascript" src="assets/javascript/jquery.waypoints.min.js"></script>
-<script type="text/javascript" src="assets/javascript/waypointsShortcuts/sticky.min.js"></script>
-<!-- Animations scripts -->
-<script src="assets/javascript/three.r92.min.js"></script>
-<script src="assets/javascript/vanta.birds.min.js"></script>
+                <div id="socialMedia">
+                    <div class="icon-wrap flex row">
+                        <a target="_blank" href="https://www.facebook.com/benjamin.schulke.90">
+                            <div class="flex icon" id="icon1">
+                                <i class="fab fa-facebook-f"></i>
+                                <div class="overlayIcon">
+                                    <i class="fab fa-facebook-f mediaIcon"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/itsreallybenjamin/?hl=en">
+                            <div class="flex icon">
+                                <i class="fab fa-instagram"></i>
+                                <div class="overlayIcon">
+                                    <i class="fab fa-instagram mediaIcon"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/benjamin-schulke-19b29126/">
+                            <div class="flex icon" id="icon3">
+                                <i class="fab fa-linkedin-in"></i>
+                                <div class="overlayIcon">
+                                    <i class="fab fa-linkedin-in mediaIcon"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://github.com/bcschulke">
+                            <div class="flex icon" id="icon4">
+                                <i class="fab fa-github"></i>
+                                <div class="overlayIcon">
+                                    <i class="fab fa-github mediaIcon"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
 
-<script type="text/javascript" src="assets/javascript/resume.js">
-</script>
+<!-- Modals -->
+  <!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Kick Coffee Co. Dashboard</h4>
+        <p>A simple responsive dashboard app for a startup coffee shop.</p>
+    </div>
+    <div class="modal-footer">
+        <a href="Projects/Coffee_Dash/index.html" target="_blank" class="modal-close waves-effect indigo lighten-2 btn">Visit</a>
+    </div>
+</div>
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <h4>Natural Clean</h4>
+        <p>Natural Clean is a real world static website mockup being developed for a relative's cleaning business. The hope is to deploy it live within the next month or so.</p>
+    </div>
+    <div class="modal-footer">
+        <a href="https://bcschulke.github.io/naturalclean/" target="_blank" class="modal-close waves-effect indigo lighten-2 btn">Visit</a>
+    </div>
+</div>
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <h4>Yelp Camp</h4>
+        <p>This was the pinnacle Web Developer Bootcamp course project, and is a full-stack(MEN) website made to showcase potential camping sites.</p>
+    </div>
+    <div class="modal-footer">
+        <a href="https://mysterious-shelf-60410.herokuapp.com/" target="_blank" class="modal-close waves-effect indigo lighten-2 btn">Visit</a>
+    </div>
+</div>
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <h4>The Great RGB Game</h4>
+        <p>This simple game made as part of the Web Developer Bootcamp course was made to practice and develop fundamental vanilla javascript skills.</p>
+    </div>
+    <div class="modal-footer">
+        <a href="Projects/colorGame/colorGame.html" target="_blank" class="modal-close waves-effect indigo lighten-2 btn">Visit</a>
+    </div>
+</div>
+       
 
-<script src="https://kit.fontawesome.com/acd8a189f4.js"></script>
+            
+    <!-- SCRIPTS -->
+
+    <!-- jQuery -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+    <!-- Materialize -->
+    <script src="assets/js/materialize.min.js"></script>
+
+    <!-- Waypoints JS -->
+    <script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/js/waypointsShortcuts/sticky.min.js"></script>
+
+    <!-- Internal JS -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

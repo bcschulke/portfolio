@@ -1,0 +1,187 @@
+body, html {
+    height: 100%;
+}
+
+footer {
+  background-color: #1B242F;
+  color: white;
+}
+
+
+/* Classes */
+.container {
+  width:80%;
+}
+.navbar {
+    padding-left: 20px;
+    padding-right: 10px;
+    z-index: 1;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
+footer .icon-wrap .icon {
+  overflow: hidden;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  position: relative;
+  text-align: center;
+  margin: 0 15px;
+  background: #7986cb;
+  font-size: 18pt;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cards */
+.card.small {
+    height: 305px;
+}
+
+/* #portfolio .card {
+  box-shadow: none;
+  border-radius: 20px !important;
+} */
+
+/* ID's */
+#portrait {
+    text-align: center;
+}
+
+nav a:hover {
+  color: #7986cb;
+  transition-duration: 0.5s;
+}
+
+#portfolio {
+  background-color: #e7dfdd;
+}
+
+/* Contact Row */
+
+#socialMedia a{
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+}
+
+/* Overlays */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.75s ease;
+  background-color: white;
+}
+
+.card.project:hover .overlay {
+  opacity: 1;
+}
+
+.tags {
+  color: black;
+  font-size: 1rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.pTitle {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 700;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.visit {
+  color: white;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.overlayIcon {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .1s ease;
+}
+
+.icon:hover .overlayIcon {
+  bottom: 0;
+  height: 100%;
+}
+
+.mediaIcon{
+  white-space: nowrap; 
+  color: #7986cb;
+  font-size: 18pt;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/* Parallax */
+.parallax-container {
+    min-height: 100%;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+  }
+    .parallax-container .section {
+      width: 100%;
+    }
+  
+  @media only screen and (max-width : 992px) {
+    .parallax-container .section {
+      position: absolute;
+      top: 50%;
+    }
+    #index-banner .section {
+      top: 10%;
+    }
+  }
+  
+  @media only screen and (max-width : 600px) {
+    #index-banner .section {
+      top: 0;
+    }
+  }
+
+  /* Waypoints */
+  .stuck {
+    position:fixed;
+    top:0;
+  }
