@@ -8,7 +8,6 @@ var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1")
 var resetButton = document.querySelector("#reset");
-var easyBtn = document.querySelector("#easyBtn");
 var modeButtons = document.querySelectorAll(".mode");
 
 init();
@@ -24,9 +23,10 @@ function setupModeButtons(){
 		modeButtons[i].addEventListener("click", function(){
 			modeButtons[0].classList.remove("selected");
 			modeButtons[1].classList.remove("selected");
+			modeButtons[2].classList.remove("selected");
 			this.classList.add("selected");
 
-			this.textContent === "Easy" ? numSquares = 3: numSquares = 6;
+			this.textContent === "Easy" ? numSquares = 3: "Ultra" ? numSquares = 9: numSquares = 6;
 			reset();
 		});
 	}
@@ -43,7 +43,7 @@ function setupSquares(){
 				changeColors(clickedColor);
 				h1.style.backgroundColor = clickedColor;
 			} else {
-				this.style.backgroundColor = "#232323";
+				this.style.backgroundColor = "#bbb";
 				messageDisplay.textContent = "Try Again";
 
 			}
@@ -63,7 +63,7 @@ function reset(){
 		squares[i].style.display = "none";
 		
 	}
-	h1.style.backgroundColor = "steelBlue";
+	h1.style.backgroundColor = "#D56C2C";
 	messageDisplay.textContent = "";
 	resetButton.textContent = "New Colors";
 	}
