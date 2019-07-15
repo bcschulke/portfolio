@@ -17,17 +17,35 @@
 </head>
 
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+            <div class="nav-wrapper">
+                <a href="#banner" class="brand-logo">Ben<span class="hide-on-small-only">jamin</span> Schulke</a>
+                <a href="#banner" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+            
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     <!-- INDEX BANNER -->
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot scrollspy" id="banner">
             <div class="container center">
                 <br><br>
-                <h1 class="header black-text text-lighten-2">Hello. I'm Benjamin Schulke.</h1>
+                <h1 class="header navy">Hello. I'm Benjamin Schulke.</h1>
                 <div class="row">
-                    <h5 class="header black-text col s12 light">I'm a Front-End Web Developer.</h5>
+                    <h5 class="header navy">I'm a Front-End Web Developer.</h5>
                 </div>
                 <div class="row">
-                    <a href="#about" class="btn-large waves-effect waves-light indigo lighten-2">Find Out More</a>
+                    <a href="#about" class="btn-large waves-effect waves-light">Find Out More</a>
                 </div>
                 <br><br>
             </div>
@@ -35,29 +53,12 @@
         <div class="parallax"><img src="imgs/coffeee2.png" alt="Unsplashed background img 1"></div>
     </div>
 
-    <!-- NAVBAR -->
-    <nav class="navbar black">
-        <div class="nav-wrapper">
-            <a href="#banner" class="brand-logo">Ben<span class="hide-on-small-only">jamin</span> Schulke</a>
-            <a href="#banner" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-        
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    
 
     <!-- About Section -->
-    <div class="container">
-        <div class="section scrollspy" id="about">
-            <h3 class="center">About Me</h3>
+    <div class="section scrollspy" id="about">
+        <div class="container">
+            <h3 class="center tan">About Me</h3>
             <!-- Portrait -->
             <div class="row">
                 <br><br>
@@ -71,8 +72,8 @@
                 <div class="col s12 m6 l4">
                     <div class="card small hoverable">
                         <div class="card-title">
-                            <h2 class="center indigo-text lighten-2"><i class="material-icons">face</i></h2>
-                            <h5 class="center indigo-text lighten-2">Relational</h5>
+                            <h2 class="center peach"><i class="material-icons">face</i></h2>
+                            <h5 class="center peach">Relational</h5>
                         </div>
                         <div class="card-content">
                             <p class="light">People matter more than projects. I strive to do my work with excellence, but never at the cost of someone's humanity.</p>
@@ -83,22 +84,22 @@
                 <div class="col s12 m6 l4">
                     <div class="card small hoverable">
                         <div class="card-title">
-                            <h2 class="center indigo-text lighten-2"><i class="material-icons">palette</i></h2>
-                            <h5 class="center indigo-text lighten-2">Minimalistic</h5>
+                            <h2 class="center peach"><i class="material-icons">palette</i></h2>
+                            <h5 class="center peach">Minimalistic</h5>
                         </div>
                         <div class="card-content">
-                         <p class="light">I am a firm believer in keeping things simple and beautiful. Just as eyes need room to breathe, they also long to see things in order.</p>
+                            <p class="light">I am a firm believer in keeping things simple and beautiful. Just as eyes need room to breathe, they also long to see things in order.</p>
 
                         </div>
         
-                     </div>
+                        </div>
                 </div>
         
                 <div class="col s12 m6 offset-m3 l4">
                     <div class="card small hoverable">
                         <div class="card-title">
-                                <h2 class="center indigo-text lighten-2"><i class="material-icons">stars</i></h2>
-                                <h5 class="center indigo-text lighten-2">Intentional</h5>
+                                <h2 class="center peach"><i class="material-icons">stars</i></h2>
+                                <h5 class="center peach">Intentional</h5>
                         </div>
                         <div class="card-content">
                             <p class="light">I believe the why matters more than the what. I love to help people discover their 'why' and put it into action through design.</p>
@@ -108,13 +109,12 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Portfolio -->
-        
     </div>
+    
+    <!-- Portfolio -->
     <div class="section scrollspy" id="portfolio">
         <div class="container">
-            <h3 class="center">Portfolio</h3>
+            <h3 class="center navy">Portfolio</h3>
             <!-- Projects -->
             <div class="row">
                 <div class="col s12 m6 l4">
@@ -125,7 +125,7 @@
                         <div class="overlay">
                             <div class="pTitle truncate">Kick Coffee Co.</div>
                             <div class="tags">HTML+CSS+JS+Bootstrap</div>
-                            <a class="waves-effect indigo lighten-2 btn modal-trigger visit" href="#modal1">Learn More</a>
+                            <a class="waves-effect btn modal-trigger visit" href="#modal1">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                         <div class="overlay">
                             <div class="pTitle truncate">Natural Clean</div>
                             <div class="tags">HTML+CSS+Materialize</div>
-                            <a class="waves-effect indigo lighten-2 btn modal-trigger visit" href="#modal2">Learn More</a>
+                            <a class="waves-effect btn modal-trigger visit" href="#modal2">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                             <div class="pTitle truncate">Yelp Camp</div>
                             <div class="tags truncate">
                                 Node+Express+Mongo+Bootstrap</div>
-                            <a class="waves-effect indigo lighten-2 btn modal-trigger visit" href="#modal3">Learn More</a>
+                            <a class="waves-effect btn modal-trigger visit" href="#modal3">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
                             <div class="pTitle truncate">RGB Game</div>
                             <div class="tags truncate">
                                 HTML+CSS+JS</div>
-                            <a class="waves-effect indigo lighten-2 btn modal-trigger visit" href="#modal4">Learn More</a>
+                            <a class="waves-effect btn modal-trigger visit" href="#modal4">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
                             <div class="pTitle truncate">High Pointe Bulletin</div>
                             <div class="tags truncate">
                                 Designed with Canva</div>
-                            <a class="waves-effect indigo lighten-2 btn modal-trigger visit" href="#modal5">Learn More</a>
+                            <a class="waves-effect btn modal-trigger visit" href="#modal5">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -189,7 +189,7 @@
                             <div class="pTitle truncate">All In Capital Campaign</div>
                             <div class="tags truncate">
                                 Designed with Canva</div>
-                            <a class="waves-effect indigo lighten-2 btn modal-trigger visit" href="#modal6">Learn More</a>
+                            <a class="waves-effect btn modal-trigger visit" href="#modal6">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -200,7 +200,7 @@
     <footer>
         <div class="section scrollspy" id="contact">
             <div class="container">
-                <div class="center">
+                <div class="center greyish">
                     <h3>Contact</h3>
                     <br><br>
                     <h6>Benjamin Schulke</h6>
@@ -258,7 +258,7 @@
         <p>A simple responsive dashboard app for a startup coffee shop.</p>
     </div>
     <div class="modal-footer">
-        <a href="Projects/Coffee_Dash/index.html" target="_blank" class="modal-close waves-effect indigo lighten-2 btn">Visit</a>
+        <a href="Projects/Coffee_Dash/index.html" target="_blank" class="modal-close waves-effect btn">Visit</a>
     </div>
 </div>
 <div id="modal2" class="modal">
@@ -267,7 +267,7 @@
         <p>Natural Clean is a real world static website mockup being developed for a relative's cleaning business. The hope is to deploy it live within the next month or so.</p>
     </div>
     <div class="modal-footer">
-        <a href="https://bcschulke.github.io/naturalclean/" target="_blank" class="modal-close waves-effect indigo lighten-2 btn">Visit</a>
+        <a href="https://bcschulke.github.io/naturalclean/" target="_blank" class="modal-close waves-effect btn">Visit</a>
     </div>
 </div>
 <div id="modal3" class="modal">
@@ -276,7 +276,7 @@
         <p>This was the pinnacle Web Developer Bootcamp course project, and is a full-stack(MEN) website made to showcase potential camping sites.</p>
     </div>
     <div class="modal-footer">
-        <a href="https://mysterious-shelf-60410.herokuapp.com/" target="_blank" class="modal-close waves-effect indigo lighten-2 btn">Visit</a>
+        <a href="https://mysterious-shelf-60410.herokuapp.com/" target="_blank" class="modal-close waves-effect btn">Visit</a>
     </div>
 </div>
 <div id="modal4" class="modal">
@@ -285,7 +285,7 @@
         <p>This simple game was made as part of the Web Developer Bootcamp course to practice and develop fundamental vanilla javascript skills. I later added the "Ultra" setting, added a hover effect to see which square is selected, and modified a few other stylistic things.</p>
     </div>
     <div class="modal-footer">
-        <a href="Projects/colorGame/colorGame.html" target="_blank" class="modal-close waves-effect indigo lighten-2 btn">Visit</a>
+        <a href="Projects/colorGame/colorGame.html" target="_blank" class="modal-close waves-effect btn">Visit</a>
     </div>
 </div>
 <div id="modal5" class="modal">
@@ -294,7 +294,7 @@
         <p>This bulletin was redesigned from scratch to be a more intentional fit within High Pointe's communication strategy. The bulletin is now geared towards new visitors, more clearly pointing its readers to the website and social media, and has static information to save on paper use.</p>
     </div>
     <div class="modal-footer">
-        <a href="Projects/pdfs/bulletin.pdf" target="_blank" class="modal-close waves-effect indigo lighten-2 btn">Visit</a>
+        <a href="Projects/pdfs/bulletin.pdf" target="_blank" class="modal-close waves-effect btn">Visit</a>
     </div>
 </div>
 <div id="modal6" class="modal">
@@ -303,7 +303,7 @@
         <p>This brochure was designed to inspire and relay to High Pointe's congregants the plan to pay off her building debt.</p>
     </div>
     <div class="modal-footer">
-        <a href="Projects/pdfs/allIn.pdf" target="_blank" class="modal-close waves-effect indigo lighten-2 btn">Visit</a>
+        <a href="Projects/pdfs/allIn.pdf" target="_blank" class="modal-close waves-effect btn">Visit</a>
     </div>
 </div>
        
